@@ -44,6 +44,37 @@ Chrome 内置的 Gemini 侧边栏 AI 助手目前仅在美国地区开放。Chro
 
 ---
 
+## 前置准备
+
+在运行脚本之前，建议先完成以下两步常规设置，以确保 Gemini 功能可以正常激活。
+
+### 第一步：检查并更新 Chrome 版本
+
+前往 `chrome://settings/help`，将 Chrome 更新至最新版本（建议 **v147+**），更新完成后**完全重启** Chrome。
+
+### 第二步：将界面语言切换为美式英语（关键）
+
+前往 `chrome://settings/languages`，将 **English (United States)** 移至语言列表顶部并重启 Chrome。
+
+> 语言设置是解锁 Gemini 功能最关键的一步，请务必确认已置顶。
+
+完成后，在地址栏输入 `chrome://skills/browse` 验证技能库是否可以访问。若页面正常显示，则无需后续步骤；若页面无法打开，继续执行第三步。
+
+### 第三步：手动开启实验性功能开关
+
+前往 `chrome://flags`，在搜索框中输入 `Glic`，将以下所有选项设置为 **Enabled**：
+
+| 选项                     | 状态    |
+| ------------------------ | ------- |
+| Glic                     | Enabled |
+| Glic side panel          | Enabled |
+| Glic actor               | Enabled |
+| Enables Skills in Gemini | Enabled |
+
+全部设置完毕后，点击页面底部的 **Relaunch** 按钮重启 Chrome 使配置生效。
+
+---
+
 ## 使用方法
 
 ### 第一步：完全退出 Chrome

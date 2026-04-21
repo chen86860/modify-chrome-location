@@ -44,6 +44,37 @@ No external dependencies required.
 
 ---
 
+## Prerequisites
+
+Before running the script, complete the following setup steps to ensure Gemini activates correctly.
+
+### Step 1 — Update Chrome
+
+Go to `chrome://settings/help` and update Chrome to the latest version (**v147+ recommended**). After updating, **fully restart** Chrome.
+
+### Step 2 — Set Language to English (United States)
+
+Go to `chrome://settings/languages` and move **English (United States)** to the top of the language list, then restart Chrome.
+
+> This is the most critical step for unlocking Gemini — make sure it is set as the primary language.
+
+After restarting, navigate to `chrome://skills/browse` to verify the Skills page loads. If it opens successfully, no further steps are needed. If not, continue to Step 3.
+
+### Step 3 — Enable Experimental Flags
+
+Go to `chrome://flags` and search for `Glic`. Set all of the following options to **Enabled**:
+
+| Flag                     | State   |
+| ------------------------ | ------- |
+| Glic                     | Enabled |
+| Glic side panel          | Enabled |
+| Glic actor               | Enabled |
+| Enables Skills in Gemini | Enabled |
+
+Click **Relaunch** at the bottom of the page to restart Chrome and apply the changes.
+
+---
+
 ## Usage
 
 ### Step 1 — Quit Chrome
